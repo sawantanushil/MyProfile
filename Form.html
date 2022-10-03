@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="formPage.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200&display=swap" rel="stylesheet">
+
+    <title>Student Registration Form</title>
+    <style>
+        i {
+            color: blue;
+        }
+
+        label {
+            color: cadetblue;
+            font-size: large;
+            font-family: 'poppins', cursive;
+            font-weight: bold;
+        }
+
+        input[type="text"],input[type="email"] {
+            color: brown;
+            background: antiquewhite;
+            width: 165px;
+        }
+        input[type="submit"]{
+            color:red;
+            width: 100px;
+            border-radius: 20px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        input[type="submit"]:hover{
+            color: brown;
+            background:burlywood ;
+        }
+        input[type="reset"]{
+            color:red;
+            width: 100px;
+            border-radius: 20px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        input[type="reset"]:hover{
+            color: brown;
+            background:burlywood ;
+        }
+        
+       
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Student Registration Form</h2>
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="First">First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="First Name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Last">Last Name</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Last Name">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">mobile</label>
+
+                        </td>
+                        <td>
+                            <input type="number" placeholder="1234567980" required minlength="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Gmail</label>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="abc.gmail.com" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password</label>
+                        </td>
+                        <td>
+                            <input type="Password" placeholder="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Graduation"> Graduation </label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="birth">Date of Birth</label>
+                        </td>
+                        <td>
+                            <input type="date" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passing">Pass Out Year</label>
+                        </td>
+                        <td>
+                            <input type="date" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Country</label>
+
+                        </td>
+                        <td>
+                            <input type="text" value="India" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Citizinship</label>
+                        </td>
+                        <td>
+                            <input type="text" value="India" readonly autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="photo">Profile Photo</label>
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=" upload All mark_sheet">mark_sheet</label>
+                        </td>
+                        <td>
+                            <input type="file" name="" id="" multiple>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                             <label for="abc">Select Graduation</label>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="BE">BE</option>
+                                <option value="BCA">BCA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="BSC">BSC</option>
+                                <option value="MBA">MBA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Please Select Tranning</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">Angular</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Java</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">React</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Testing</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Gender</label>
+
+                        </td>
+                        <td>
+                            <input type="radio" name="Gender">
+                            <label for="">Male</label>
+                            <input type="radio" name="Gender">
+                            <label for="">Female</label>
+                            <input type="radio" name="Gender">
+                            <label for="">Other</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Permanant">Permanant Address</label>
+                        </td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Download Templete
+                        </td>
+                        <td>
+                            <button>
+                                <a href="formPage.jpg" target="_blank">Download</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                         <input type="submit" value="Submit">  
+                          <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </form>
+
+    <footer>
+        <p>
+            <strong>SOS sing in Option</strong> &nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-google"></i> &nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;
+        </p>
+    </footer>
+    </fieldset>
+    </form>
+</body>
+
+</html>

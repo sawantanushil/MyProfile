@@ -16,12 +16,14 @@
             margin-right: 25px;
             font-size: 20px;
             color: blue;
-            
+
 
         }
-        .Icon a{
+
+        .Icon a {
             margin: 20px;
             font-size: x-large;
+            text-shadow: 3px 3px 2px rebeccapurple;
         }
 
         footer #follow {
@@ -51,6 +53,9 @@
 
         }
 
+        .details{
+            margin: 10px;
+        }
         footer {
             background-color: aqua;
         }
@@ -78,17 +83,20 @@
             padding: 20px;
         }
 
-        .a_margin a {
+        .a_margin a{
             margin-right: 30px;
             font-size: x-large;
             font-family: fantasy;
             font-style: italic;
         }
-        .My_Details i{
+
+        .My_Details span {
             margin: 15px;
-            
+            font-size: x-large;
         }
-    
+        .a_margin a:hover{
+            text-decoration: underline;
+        }
     </style>
 
 </head>
@@ -98,21 +106,16 @@
     <body>
         <div>
 
-            <header>
+            <header class=" My_Details">
 
-                <span class="My_Details">
-                    <i class="fa-solid fa-user">Anushil Sawant</i>
-                    <i class="fa-solid fa-mobile">9699000101</i>
-                    <i class="fa-solid fa-envelope">anushilsawant96@gmail.com</i>
-
+                <span>
+                    <i class="fa-solid fa-user" aria-hidden="true"></i> <span class="detials">Anushil Sawant</span> 
+                    <i class="fa-solid fa-mobile" aria-hidden="true"></i><span class="detials">  9699000101</span>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> <span class="detials">anushilsawant96@gmail.com</span>
                 </span>
-
-
-
 
         </div>
         </header>
-
 
         <nav>
             <span class="a_margin">
